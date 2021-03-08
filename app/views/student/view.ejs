@@ -1,0 +1,12 @@
+<%- include('../partials/header.ejs') %>
+
+<h1><%= student.first_name %> <%= student.last_name %></h1>
+<p>
+    Utilisateur Github : <%= student.github_username %>
+</p>
+<img width="150" src="<%= student.profile_picture_url%>">
+<br>
+<a href="/promos/<%= student.promo_id %>">Voir la promo de l'étudiant</a>
+
+
+<%- include('../partials/footer.ejs') %>
